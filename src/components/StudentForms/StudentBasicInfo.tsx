@@ -1,9 +1,9 @@
 import { Col, Row } from "antd";
 import FormInput from "../Forms/FormInput";
+import FormDatePicker from "../Forms/FormDatePicker";
 import FormSelectField from "../Forms/FormSelectField";
 import FormTextArea from "../Forms/FormTextArea";
 import { bloodGroupOptions } from "@/constants/global";
-import FormDatePicker from "../Forms/FormDatePickr";
 
 const StudentBasicInfo = () => {
   return (
@@ -13,7 +13,7 @@ const StudentBasicInfo = () => {
         borderRadius: "5px",
         padding: "15px",
         marginBottom: "10px",
-        marginTop: "15px",
+        marginTop: "10px",
       }}
     >
       <Row gutter={{ xs: 24, xl: 8, lg: 8, md: 24 }}>

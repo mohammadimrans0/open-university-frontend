@@ -10,11 +10,11 @@ const LocalGuardianInfo = () => {
           borderRadius: "5px",
           padding: "15px",
           marginBottom: "10px",
-          marginTop: "15px",
+          marginTop: "10px",
         }}
       >
         <p style={{ fontSize: "18px", fontWeight: "500", margin: "5px 0px" }}>
-          Local Guardian Information
+          Guardian information
         </p>
         <Row gutter={{ xs: 24, xl: 8, lg: 8, md: 24 }}>
           <Col span={6} style={{ margin: "10px 0" }}>

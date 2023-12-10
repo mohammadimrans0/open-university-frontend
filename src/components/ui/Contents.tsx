@@ -1,27 +1,28 @@
-"use client"
+"use client";
+import { Layout } from "antd";
+import Header from "./Header";
 
-import { Layout } from 'antd'
-import Header from './Header';
-
-const {Content} = Layout
+const { Content } = Layout;
 
 const Contents = ({ children }: { children: React.ReactNode }) => {
-    return (
-      <Content
+  return (
+    <Content
+      style={{
+        minHeight: "100vh",
+        color: "black",
+      }}
+    >
+      <Header />
+
+      <div
         style={{
-          minHeight: "100vh",
+          padding: "10px",
         }}
       >
-        <Header />
-        <div
-          style={{
-          padding: '10px'
-        }}
-        >
-          {children}
-        </div>
-      </Content>
-    );
+        {children}
+      </div>
+    </Content>
+  );
 };
 
 export default Contents;

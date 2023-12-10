@@ -1,4 +1,4 @@
-import { Row} from "antd";
+import { Button, Row } from "antd";
 
 const NotFoundPage = () => {
   return (
@@ -9,7 +9,7 @@ const NotFoundPage = () => {
         height: "100vh",
       }}
     >
-      <h1>404!!! Page Not Found</h1>
+      <h1>404!!! Page Not Found!</h1>
     </Row>
   );
 };

@@ -10,7 +10,6 @@ import {
 } from "@ant-design/icons";
 import Link from "next/link";
 import { USER_ROLE } from "./role";
-
 export const sidebarItems = (role: string) => {
   const defaultSidebarItems: MenuProps["items"] = [
     {
@@ -105,14 +104,6 @@ export const sidebarItems = (role: string) => {
             </Link>
           ),
           key: `/${role}/offered-course-section`,
-        },
-        {
-          label: (
-            <Link href={`/${role}/offered-course-schedule`}>
-              Course schedules
-            </Link>
-          ),
-          key: `/${role}/offered-course-schedule`,
         },
       ],
     },
