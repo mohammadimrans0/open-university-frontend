@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Layout, Menu } from "antd";
 
 import { sidebarItems } from "@/constants/sidebarItems";
-import { USER_ROLE } from "@/constants/role";
 import { getUserInfo } from "@/services/auth.service";
 
 const { Sider } = Layout;
@@ -12,9 +11,7 @@ const { Sider } = Layout;
 const SideBar = () => {
   const [collapsed, setCollapsed] = useState(false);
 
-  // const role = USER_ROLE.ADMIN;
   const { role } = getUserInfo() as any;
-  // console.log(role);
 
   return (
     <Sider
@@ -31,18 +28,33 @@ const SideBar = () => {
         bottom: 0,
       }}
     >
-      <div
-        style={{
-          color: "white",
-          fontSize: "2rem",
-          textAlign: "center",
-          fontWeight: "bold",
-          marginBottom: ".5rem",
-          padding: "10px 0px",
-        }}
-      >
-        UMS
-      </div>
+      {!collapsed ? (
+        <div
+          style={{
+            color: "white",
+            fontSize: "2rem",
+            textAlign: "center",
+            fontWeight: "bold",
+            marginBottom: ".5rem",
+            padding: "15px 0px",
+          }}
+        >
+          Open University
+        </div>
+      ) : (
+        <div
+          style={{
+            color: "white",
+            fontSize: "2rem",
+            textAlign: "center",
+            fontWeight: "bold",
+            marginBottom: ".5rem",
+            padding: "15px 0px",
+          }}
+        >
+          OU
+        </div>
+      )}
       <Menu
         theme="dark"
         defaultSelectedKeys={["1"]}

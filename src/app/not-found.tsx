@@ -1,4 +1,4 @@
-import { Button, Row } from "antd";
+import { Row } from "antd";
 
 const NotFoundPage = () => {
   return (
